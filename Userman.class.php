@@ -550,17 +550,17 @@ class Userman extends FreePBX_Helpers implements BMO {
 										_("If the user settings have changed, please rebuild the phone configuration if the user uses Sangoma's S, D & P series phones configured through Endpoint Manager.");
 								}
 							}
+							if (!is_null($password) && $this->FreePBX->Modules->checkStatus('sysadmin')) {
+								$passwordExpiryData['id'] = $ret['id'];
+								$passwordExpiryData['username'] = $username;
+								$passwordExpiryData['email'] = $extraData['email'] ?? "";
+								$this->pwdExpReminder()->resetPasswordExpiry($passwordExpiryData, 'ucp');
+							}
 
 							$this->setGlobalSettingByID($ret['id'],'assigned',$assigned);
 							$this->message = ['message' => $ret['message'], 'type' => $ret['type']];
 						} else {
 							$this->message = ['message' => $ret['message'], 'type' => $ret['type']];
-						}
-						if (!is_null($password) && $this->FreePBX->Modules->checkStatus('sysadmin')) {
-							$passwordExpiryData['id'] = $ret['id'];
-							$passwordExpiryData['username'] = $username;
-							$passwordExpiryData['email'] = $extraData['email'] ?? "";
-							$this->pwdExpReminder()->resetPasswordExpiry($passwordExpiryData, 'ucp');
 						}
 					}
 					if(!empty($ret['status'])) {
