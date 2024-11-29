@@ -3909,6 +3909,9 @@ class Userman extends FreePBX_Helpers implements BMO {
 		$sql = "DELETE from userman_call_activity_users Where act_grp_id=:id";
 		$sth = $this->db->prepare($sql);
 		$sth->execute(array( ':id' => $id ));
+		$sql = "DELETE from ".$this->userSettingsTable." Where module = 'sangomaconnect' AND `key` = :key";
+		$sth = $this->db->prepare($sql);
+		$sth->execute(array( ':key' => "call_monitoring_permission_".$id ));
 		return array( "status" => true, "type" => "success", "message" => _("Group Successfully Deleted") );
 	}
 	public function getAllUcpTemplates() {
