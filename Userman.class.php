@@ -3909,6 +3909,7 @@ class Userman extends FreePBX_Helpers implements BMO {
 		$sql = "DELETE from userman_call_activity_users Where act_grp_id=:id";
 		$sth = $this->db->prepare($sql);
 		$sth->execute(array( ':id' => $id ));
+		$this->FreePBX->Hooks->processHooks($id);
 		return array( "status" => true, "type" => "success", "message" => _("Group Successfully Deleted") );
 	}
 	public function getAllUcpTemplates() {
