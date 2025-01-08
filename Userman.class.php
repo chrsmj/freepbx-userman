@@ -4409,4 +4409,21 @@ class Userman extends FreePBX_Helpers implements BMO {
 			$this->pwdExpReminder()->deleteReminderSettingsForUser($data['username'], $id);
 		}
 	}
+
+	public function updateUserAccountCodes($directory) {
+		$users = $this->getAllUsers($directory);
+		foreach ($users as $user) {
+			if($user['default_extension'] && $user['email']) {
+				$astman = $this->FreePBX->astman;
+				if ($astman->connected()) {
+					$accCode = explode("@", $user['email'])[0];
+					$astman->database_put("AMPUSER",$user['default_extension']."/accountcode",$accCode);
+
+					$sql = "UPDATE sip SET data = :accCode WHERE `keyword`= 'accountcode' AND `id` = :id";
+					$sth = $this->database->prepare($sql);
+					$sth->execute(array('accCode' => $accCode, 'id' => $user['default_extension']));
+				}
+			}
+		}
+	}
 }
