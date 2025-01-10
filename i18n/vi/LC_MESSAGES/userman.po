@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-09 06:06+0000\n"
+"POT-Creation-Date: 2025-01-10 09:07+0000\n"
 "PO-Revision-Date: 2017-07-03 12:33-0400\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -96,6 +96,10 @@ msgstr ""
 #: views/welcome.php:34 views/welcome.php:71 views/welcome.php:102
 #: views/welcome.php:131 views/welcome.php:166
 msgid "Add"
+msgstr ""
+
+#: install.php:53
+msgid "Add Account Code"
 msgstr ""
 
 #: views/call_activity_group.php:6 views/rnav.php:59
@@ -213,7 +217,7 @@ msgstr ""
 msgid "Call Activity Groups"
 msgstr ""
 
-#: install.php:53
+#: install.php:67
 msgid "Call Activity Groups Max User Limit"
 msgstr ""
 
@@ -1885,7 +1889,7 @@ msgid ""
 "be linked to a single user."
 msgstr ""
 
-#: install.php:54
+#: install.php:68
 msgid ""
 "This is the limit for the number of users that can be added to a Call "
 "Activity Group."
@@ -2275,6 +2279,13 @@ msgstr ""
 #: views/welcome.php:11
 #, php-format
 msgid "What is User Manager"
+msgstr ""
+
+#: install.php:54
+msgid ""
+"When set to 'Yes', the account code of the linked extension will be updated "
+"with the first part of the respective user's email address during the user "
+"directory sync."
 msgstr ""
 
 #: install.php:40
