@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for userman
-# Copyright (C) 2008-2024 Sangoma Technologies, Inc.
+# Copyright (C) 2008-2025 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-09 01:08-0500\n"
+"POT-Creation-Date: 2025-01-10 04:26-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,6 +102,10 @@ msgstr ""
 #: views/welcome.php:131
 #: views/welcome.php:166
 msgid "Add"
+msgstr ""
+
+#: install.php:53
+msgid "Add Account Code"
 msgstr ""
 
 #: views/call_activity_group.php:6
@@ -229,7 +233,7 @@ msgstr ""
 msgid "Call Activity Groups"
 msgstr ""
 
-#: install.php:53
+#: install.php:67
 msgid "Call Activity Groups Max User Limit"
 msgstr ""
 
@@ -1998,7 +2002,7 @@ msgid ""
 "be linked to a single user."
 msgstr ""
 
-#: install.php:54
+#: install.php:68
 msgid ""
 "This is the limit for the number of users that can be added to a Call "
 "Activity Group."
@@ -2410,6 +2414,13 @@ msgstr ""
 #: views/welcome.php:11
 #, php-format
 msgid "What is User Manager"
+msgstr ""
+
+#: install.php:54
+msgid ""
+"When set to 'Yes', the account code of the linked extension will be updated "
+"with the first part of the respective user's email address during the user "
+"directory sync."
 msgstr ""
 
 #: install.php:40

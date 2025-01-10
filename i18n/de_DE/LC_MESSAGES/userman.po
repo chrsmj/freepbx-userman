@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-09 01:08-0500\n"
+"POT-Creation-Date: 2025-01-10 04:26-0500\n"
 "PO-Revision-Date: 2018-10-24 01:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/userman/de/>\n"
@@ -98,6 +98,10 @@ msgstr "Aktiv"
 #: views/welcome.php:131 views/welcome.php:166
 msgid "Add"
 msgstr "Hinzufügen"
+
+#: install.php:53
+msgid "Add Account Code"
+msgstr ""
 
 #: views/call_activity_group.php:6 views/rnav.php:59
 msgid "Add Call Activity Group"
@@ -216,7 +220,7 @@ msgstr ""
 msgid "Call Activity Groups"
 msgstr ""
 
-#: install.php:53
+#: install.php:67
 msgid "Call Activity Groups Max User Limit"
 msgstr ""
 
@@ -2036,7 +2040,7 @@ msgstr ""
 "sein und eine Nebenstelle kann ebenfalls immer niur mit einem Benutzer "
 "verknüpft sein."
 
-#: install.php:54
+#: install.php:68
 msgid ""
 "This is the limit for the number of users that can be added to a Call "
 "Activity Group."
@@ -2435,6 +2439,13 @@ msgstr ""
 #, php-format
 msgid "What is User Manager"
 msgstr "Was ist die Benutzerwaltung"
+
+#: install.php:54
+msgid ""
+"When set to 'Yes', the account code of the linked extension will be updated "
+"with the first part of the respective user's email address during the user "
+"directory sync."
+msgstr ""
 
 #: install.php:40
 msgid ""
