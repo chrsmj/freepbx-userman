@@ -46,6 +46,20 @@ $set['type'] = CONF_TYPE_BOOL;
 $set['hidden'] = 0;
 $freepbx->Config->define_conf_setting('USERMAN_ENABLE_CALL_ACTIVITY_GROUPS',$set);
 
+$set['value'] = false;
+$set['defaultval'] =& $set['value'];
+$set['options'] = '';
+$set['sortorder'] = 1;
+$set['name'] = _('Add Account Code');
+$set['description'] = _("When set to 'Yes', the account code of the linked extension will be updated with the first part of the respective user's email address during the user directory sync.");
+$set['emptyok'] = 0;
+$set['level'] = 1;
+$set['readonly'] = 0;
+$set['type'] = CONF_TYPE_BOOL;
+$set['hidden'] = 0;
+$freepbx->Config->define_conf_setting('USERMAN_ACCOUNT_CODE',$set);
+
+
 $set['value'] = '30';
 $set['defaultval'] =& $set['value'];
 $set['options'] = array(1,50);

@@ -123,6 +123,11 @@ class Userman extends Command {
 					$output->writeln("\t<error>".$e->getMessage()."</error>");
 				}
 				$userman->unlockDirectory($directory['id']);
+				if(\FreePBX::Config()->get("USERMAN_ACCOUNT_CODE")) {
+					$output->writeln("Updating account codes...");
+					$userman->updateUserAccountCodes($directory['id']);
+					$output->writeln("Done updating account codes.");
+				}
 				$output->writeln("Finished");
 			} else {
 				$output->writeln("Not syncing directory for another ".(($timeSince + $secondsSince)-$timeNow)." seconds");
