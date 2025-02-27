@@ -1,7 +1,7 @@
 <module>
 	<rawname>userman</rawname>
 	<name>User Management</name>
-	<version>15.0.69.23</version>
+	<version>15.0.69.24</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>AGPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
@@ -11,6 +11,7 @@
 	</description>
   	<more-info>https://wiki.freepbx.org/display/FPG/User+Management+Module</more-info>
 	<changelog>
+		*15.0.69.24* FREEI-1767  added hook to callactivityupdate method 
 		*15.0.69.23* FREEI-1522 fix: Added hooks on call activity group delete And Cli command to enable Lic 
 		*15.0.69.22* FREEI-1522 fix: Added hooks on call activity group delete 
 		*15.0.69.21* Packaging of ver 15.0.69.21
