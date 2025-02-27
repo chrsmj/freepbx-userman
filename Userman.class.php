@@ -4222,6 +4222,7 @@ class Userman extends FreePBX_Helpers implements BMO {
 			$sth->bindValue(":act_grp_id{$userId}", $gid);
 		}
 		$sth->execute();
+		$this->FreePBX->Hooks->processHooks($gid);
 		return true;
 	}
 
