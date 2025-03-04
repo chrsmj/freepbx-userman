@@ -2916,6 +2916,7 @@ class Userman extends FreePBX_Helpers implements BMO {
 		$groupid = -1;
 		$groupname = "user";
 		$output = $this->getModuleSettingByID($id,$module,$setting,true,$cached);
+		$output = ($output == "null") ? null : $output;
 		if(is_null($output)) {
 			$groups = $this->getGroupsByID($id);
 			foreach($groups as $group) {
