@@ -1,7 +1,7 @@
 <module>
 	<rawname>userman</rawname>
 	<name>User Management</name>
-	<version>17.0.6.33</version>
+	<version>17.0.6.34</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>AGPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
@@ -11,6 +11,7 @@
 	</description>
   	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/20024012/User+Management+Module</more-info>
 	<changelog>
+		*17.0.6.34* bump 
 		*17.0.6.33* FREEI-1767  added hook to callactivityupdate method 
 		*17.0.6.32* #612 Auto certation of account code on userman sync 
 		*17.0.6.31* FREEI-1522 fix: Added hooks on call activity group delete 
