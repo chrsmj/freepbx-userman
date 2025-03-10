@@ -64,7 +64,7 @@ echo $usage_html;
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="username"></i>
 											</div>
 											<div class="col-md-9">
-												<input type="text" class="form-control" id="username" name="username" value="<?php echo !empty($user['username']) ? htmlentities((string) $user['username']) : ''; ?>" required pattern=".{1,255}" <?php echo !$permissions['modifyUser'] ? 'readonly' : ''; ?>>
+												<input type="text" class="form-control" id="username" name="username" value="<?php echo !empty($user['username']) ? htmlentities((string) $user['username'],ENT_QUOTES,'UTF-8',FALSE) : ''; ?>" required pattern=".{1,255}" <?php echo !$permissions['modifyUser'] ? 'readonly' : ''; ?>>
 											</div>
 										</div>
 									</div>
@@ -88,7 +88,7 @@ echo $usage_html;
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
 											</div>
 											<div class="col-md-9">
-												<input type="text" class="form-control" id="description" name="description" value="<?php echo !empty($user['description']) ? htmlentities((string) $user['description']) : ''; ?>" <?php echo !$permissions['modifyUser'] ? 'readonly' : ''?>>
+												<input type="text" class="form-control" id="description" name="description" value="<?php echo !empty($user['description']) ? htmlentities((string) $user['description'],ENT_QUOTES,'UTF-8',FALSE) : ''; ?>" <?php echo !$permissions['modifyUser'] ? 'readonly' : ''?>>
 											</div>
 										</div>
 									</div>
@@ -284,7 +284,7 @@ echo $usage_html;
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="displayname"></i>
 											</div>
 											<div class="col-md-9">
-												<input type="text" class="form-control" id="displayname" name="displayname" value="<?php echo !empty($user['displayname']) ? htmlentities((string) $user['displayname']) : ''; ?>" <?php echo !$permissions['modifyUser'] ? 'readonly' : ''?>>
+												<input type="text" class="form-control" id="displayname" name="displayname" value="<?php echo !empty($user['displayname']) ? htmlentities((string) $user['displayname'],ENT_QUOTES,'UTF-8',FALSE) : ''; ?>" <?php echo !$permissions['modifyUser'] ? 'readonly' : ''?>>
 											</div>
 										</div>
 									</div>
@@ -308,7 +308,7 @@ echo $usage_html;
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="title"></i>
 											</div>
 											<div class="col-md-9">
-												<input type="text" class="form-control" id="title" name="title" value="<?php echo !empty($user['title']) ? htmlentities((string) $user['title']) : ''; ?>" <?php echo !$permissions['modifyUser'] ? 'readonly' : ''?>>
+												<input type="text" class="form-control" id="title" name="title" value="<?php echo !empty($user['title']) ? htmlentities((string) $user['title'],ENT_QUOTES,'UTF-8',FALSE) : ''; ?>" <?php echo !$permissions['modifyUser'] ? 'readonly' : ''?>>
 											</div>
 										</div>
 									</div>
@@ -332,7 +332,7 @@ echo $usage_html;
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="company"></i>
 											</div>
 											<div class="col-md-9">
-												<input type="text" class="form-control" id="company" name="company" value="<?php echo !empty($user['company']) ? htmlentities((string) $user['company']) : ''; ?>" <?php echo !$permissions['modifyUser'] ? 'readonly' : ''?>>
+												<input type="text" class="form-control" id="company" name="company" value="<?php echo !empty($user['company']) ? htmlentities((string) $user['company'],ENT_QUOTES,'UTF-8',FALSE) : ''; ?>" <?php echo !$permissions['modifyUser'] ? 'readonly' : ''?>>
 											</div>
 										</div>
 									</div>
@@ -356,7 +356,7 @@ echo $usage_html;
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="department"></i>
 											</div>
 											<div class="col-md-9">
-												<input type="text" class="form-control" id="department" name="department" value="<?php echo !empty($user['department']) ? htmlentities((string) $user['department']) : ''; ?>" <?php echo !$permissions['modifyUser'] ? 'readonly' : ''?>>
+												<input type="text" class="form-control" id="department" name="department" value="<?php echo !empty($user['department']) ? htmlentities((string) $user['department'],ENT_QUOTES,'UTF-8',FALSE) : ''; ?>" <?php echo !$permissions['modifyUser'] ? 'readonly' : ''?>>
 											</div>
 										</div>
 									</div>
