@@ -1024,6 +1024,8 @@ class Openldap2 extends Auth {
 			// Open issues: https://github.com/Adldap2/Adldap2/issues/794
 			if ($this->config['groupmemberidentifierattr'] == "uid") {
 				$getMembers = $result[$this->config['groupmemberattr']];
+			} else if ($this->config['groupmemberidentifierattr'] == "cn") {
+				$getMembers = $result[$this->config['groupmemberattr']];
 			} else {
 				$getMembers = $result->getMembers();
 			}
@@ -1034,7 +1036,12 @@ class Openldap2 extends Auth {
 				if ($member instanceof Group) {
 					$m = $this->getUserByUsername($member->getAccountName());
 				} else {
-					$m = $this->getUserByUsername($member);
+					if ($this->config['groupmemberidentifierattr'] == "cn") {
+						$stripped_username=explode(",", explode("=", $member)[1])[0];
+						$m = $this->getUserByUsername($stripped_username);
+					} else {
+						$m = $this->getUserByUsername($member);					
+					}
 				}
 				if(!empty($m)) {
 					$this->out("\t\t\tAdding ".$m['username']." to group");
