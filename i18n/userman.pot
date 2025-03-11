@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 23:07-0500\n"
+"POT-Creation-Date: 2025-03-11 06:04-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -671,7 +671,7 @@ msgid "Group Details"
 msgstr ""
 
 #: Userman.class.php:3906
-#: functions.inc/auth/Auth.php:476
+#: functions.inc/auth/Auth.php:486
 msgid "Group Does Not Exist"
 msgstr ""
 
@@ -706,11 +706,11 @@ msgid "Group Successfully Added"
 msgstr ""
 
 #: Userman.class.php:3915
-#: functions.inc/auth/Auth.php:488
+#: functions.inc/auth/Auth.php:498
 msgid "Group Successfully Deleted"
 msgstr ""
 
-#: functions.inc/auth/Auth.php:612
+#: functions.inc/auth/Auth.php:622
 msgid "Group Successfully Updated"
 msgstr ""
 
@@ -745,7 +745,7 @@ msgstr ""
 msgid "Group updated"
 msgstr ""
 
-#: functions.inc/auth/Auth.php:583
+#: functions.inc/auth/Auth.php:593
 msgid "Groupname Can Not Be Blank!"
 msgstr ""
 
@@ -2094,11 +2094,11 @@ msgstr ""
 msgid "Unable to create default group"
 msgstr ""
 
-#: functions.inc/auth/Auth.php:577
+#: functions.inc/auth/Auth.php:587
 msgid "Unable to link group to an invalid directory"
 msgstr ""
 
-#: functions.inc/auth/Auth.php:531
+#: functions.inc/auth/Auth.php:541
 msgid "Unable to link user to an invalid directory"
 msgstr ""
 
@@ -2216,7 +2216,7 @@ msgstr ""
 msgid "User Details"
 msgstr ""
 
-#: functions.inc/auth/Auth.php:453
+#: functions.inc/auth/Auth.php:463
 msgid "User Does Not Exist"
 msgstr ""
 
@@ -2261,16 +2261,16 @@ msgstr ""
 msgid "User Manager Users"
 msgstr ""
 
-#: functions.inc/auth/Auth.php:557
+#: functions.inc/auth/Auth.php:567
 #: functions.inc/auth/modules/Freepbx.php:123
 msgid "User Successfully Added"
 msgstr ""
 
-#: functions.inc/auth/Auth.php:465
+#: functions.inc/auth/Auth.php:475
 msgid "User Successfully Deleted"
 msgstr ""
 
-#: functions.inc/auth/Auth.php:566
+#: functions.inc/auth/Auth.php:576
 msgid "User Successfully Updated"
 msgstr ""
 
@@ -2365,7 +2365,7 @@ msgstr ""
 msgid "Username"
 msgstr ""
 
-#: functions.inc/auth/Auth.php:537
+#: functions.inc/auth/Auth.php:547
 msgid "Username Can Not Be Blank!"
 msgstr ""
 
@@ -2542,7 +2542,7 @@ msgstr ""
 msgid "group"
 msgstr ""
 
-#: functions.inc/auth/Auth.php:603
+#: functions.inc/auth/Auth.php:613
 msgid "group Successfully Added"
 msgstr ""
 
