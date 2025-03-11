@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 23:07-0500\n"
+"POT-Creation-Date: 2025-03-11 06:04-0400\n"
 "PO-Revision-Date: 2016-12-21 00:22+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -624,7 +624,7 @@ msgstr "Descrição do Grupo"
 msgid "Group Details"
 msgstr "Detalhes de Grupo"
 
-#: Userman.class.php:3906 functions.inc/auth/Auth.php:476
+#: Userman.class.php:3906 functions.inc/auth/Auth.php:486
 msgid "Group Does Not Exist"
 msgstr "Grupo Não Existe"
 
@@ -658,11 +658,11 @@ msgstr ""
 msgid "Group Successfully Added"
 msgstr "Grupo Adicionado com Sucesso"
 
-#: Userman.class.php:3915 functions.inc/auth/Auth.php:488
+#: Userman.class.php:3915 functions.inc/auth/Auth.php:498
 msgid "Group Successfully Deleted"
 msgstr "Grupo Eliminado com Êxito"
 
-#: functions.inc/auth/Auth.php:612
+#: functions.inc/auth/Auth.php:622
 msgid "Group Successfully Updated"
 msgstr "Grupo Atualizado com Sucesso"
 
@@ -697,7 +697,7 @@ msgstr ""
 msgid "Group updated"
 msgstr "Grupo atualizado"
 
-#: functions.inc/auth/Auth.php:583
+#: functions.inc/auth/Auth.php:593
 msgid "Groupname Can Not Be Blank!"
 msgstr "Nome do grupo não pode estar em branco!"
 
@@ -2040,11 +2040,11 @@ msgstr "O UID não era numérico"
 msgid "Unable to create default group"
 msgstr ""
 
-#: functions.inc/auth/Auth.php:577
+#: functions.inc/auth/Auth.php:587
 msgid "Unable to link group to an invalid directory"
 msgstr ""
 
-#: functions.inc/auth/Auth.php:531
+#: functions.inc/auth/Auth.php:541
 msgid "Unable to link user to an invalid directory"
 msgstr ""
 
@@ -2155,7 +2155,7 @@ msgstr ""
 msgid "User Details"
 msgstr "Detalhes do Usuário"
 
-#: functions.inc/auth/Auth.php:453
+#: functions.inc/auth/Auth.php:463
 msgid "User Does Not Exist"
 msgstr "Usuário Não Existe"
 
@@ -2197,15 +2197,15 @@ msgstr "Configuração de Gerenciador de Usuários"
 msgid "User Manager Users"
 msgstr "Usuário do Gerenciador de Usuários"
 
-#: functions.inc/auth/Auth.php:557 functions.inc/auth/modules/Freepbx.php:123
+#: functions.inc/auth/Auth.php:567 functions.inc/auth/modules/Freepbx.php:123
 msgid "User Successfully Added"
 msgstr "Usuário Adicionado com Sucesso"
 
-#: functions.inc/auth/Auth.php:465
+#: functions.inc/auth/Auth.php:475
 msgid "User Successfully Deleted"
 msgstr "Usuário Excluído com Sucesso"
 
-#: functions.inc/auth/Auth.php:566
+#: functions.inc/auth/Auth.php:576
 msgid "User Successfully Updated"
 msgstr "Usuário Atualizado com Sucesso"
 
@@ -2296,7 +2296,7 @@ msgstr "Usuário atualizado"
 msgid "Username"
 msgstr "Nome de Usuário"
 
-#: functions.inc/auth/Auth.php:537
+#: functions.inc/auth/Auth.php:547
 msgid "Username Can Not Be Blank!"
 msgstr "O nome de usuário não pode ficar em branco!"
 
@@ -2457,7 +2457,7 @@ msgstr ""
 msgid "group"
 msgstr "grupo"
 
-#: functions.inc/auth/Auth.php:603
+#: functions.inc/auth/Auth.php:613
 msgid "group Successfully Added"
 msgstr "grupo Adicionado com Sucesso"
 
