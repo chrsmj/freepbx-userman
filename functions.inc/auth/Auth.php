@@ -256,7 +256,17 @@ abstract class Auth {
 			$sth = $this->db->prepare($sql);
 			$sth->execute();
 		}
-		return $sth->fetchAll(PDO::FETCH_ASSOC);
+		$result = $sth->fetchAll(PDO::FETCH_ASSOC);
+		$i = 0;
+		foreach($result AS $user) {
+			foreach($user AS $key => $value) {
+				if(!empty($value)) {
+					$result[$i][$key] = html_entity_decode($value,ENT_QUOTES);
+				}
+			}
+			$i++;
+		}
+		return $result;
 	}
 
 	/**
