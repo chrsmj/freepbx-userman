@@ -517,7 +517,11 @@ class Userman extends FreePBX_Helpers implements BMO {
 					$this->setGlobalSettingByGID($ret['id'],'pbx_modules',(!empty($request['pbx_modules']) ? $request['pbx_modules'] : []));
 				break;
 				case 'user':
-
+					array_walk($request,function(&$value,$key){
+						if(!is_array($value)){
+						  $value =  html_entity_decode($value);
+						}
+					});
 					$directory = $request['directory'];
 					$username = !empty($request['username']) ? $request['username'] : '';
 					$password = !empty($request['password']) ? $request['password'] : '';
