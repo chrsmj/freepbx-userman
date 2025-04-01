@@ -37,7 +37,7 @@ class Userman extends Modules
 	{
 		//User information. Returned as an array. See:
 		$this->user = $this->UCP->User->getUser();
-		//Asterisk Manager. See: https://wiki.freepbx.org/display/FOP/Asterisk+Manager+Class
+		//Asterisk Manager. See: https://sangomakb.atlassian.net/wiki/spaces/FP/pages/10551537/Asterisk+Manager+Class
 		$this->astman = $this->UCP->FreePBX->astman;
 		$this->userman = $this->UCP->FreePBX->Userman;
 		//Setting retrieved from the UCP Interface in User Manager in Admin
@@ -47,7 +47,7 @@ class Userman extends Modules
 	/**
 	 * Ajax Request
 	 * @method ajaxRequest
-	 * @link https://wiki.freepbx.org/display/FOP/BMO+Ajax+Calls#BMOAjaxCalls-ajaxRequest
+	 * @link https://sangomakb.atlassian.net/wiki/spaces/FP/pages/10420542/BMO+Ajax+Calls#ajaxRequest
 	 * @param  string      $command  The command name
 	 * @param  array      $settings Returned array settings
 	 * @return boolean                True if allowed or false if not allowed
@@ -68,7 +68,7 @@ class Userman extends Modules
 	/**
 	 * Ajax Handler
 	 * @method ajaxHandler
-	 * @link https://wiki.freepbx.org/display/FOP/BMO+Ajax+Calls#BMOAjaxCalls-ajaxHandler
+	 * @link https://sangomakb.atlassian.net/wiki/spaces/FP/pages/10420542/BMO+Ajax+Calls#ajaxHandler
 	 * @return mixed      Data to return to Javascript
 	 */
 	public function ajaxHandler()
