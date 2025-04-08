@@ -520,7 +520,7 @@ class Userman extends FreePBX_Helpers implements BMO {
 
 					$directory = $request['directory'];
 					$username = !empty($request['username']) ? $request['username'] : '';
-					$password = !empty($request['password']) ? $request['password'] : '';
+					$password = !empty($request['password']) ? htmlspecialchars_decode($request['password']) : '';
 					$description = !empty($request['description']) ? $request['description'] : '';
 					$prevUsername = !empty($request['prevUsername']) ? $request['prevUsername'] : '';
 					$prevEmail = !empty($request['prevEmail']) ? $request['prevEmail'] : '';
