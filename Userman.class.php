@@ -1373,7 +1373,7 @@ class Userman extends FreePBX_Helpers implements BMO {
 				return $this->password_policies($_POST['pwd']);
 			break;
 			case "setlocales":
-				if(!empty($_SESSION['AMP_user']->id) && ($_SESSION['AMP_user']->id == $request['id'])) {
+				if(!empty($_SESSION['AMP_user']->id) && !empty($request['id']) && ($_SESSION['AMP_user']->id == $request['id'])) {
 					$_SESSION['AMP_user']->lang = !empty($request['language']) ? $request['language'] : $this->getLocaleSpecificSettingByUID($request['id'],"language");
 					$_SESSION['AMP_user']->tz = !empty($request['timezone']) ? $request['timezone'] : $this->getLocaleSpecificSettingByUID($request['id'],"timezone");
 					$_SESSION['AMP_user']->timeformat = !empty($request['timeformat']) ? $request['timeformat'] : $this->getLocaleSpecificSettingByUID($request['id'],"timeformat");
