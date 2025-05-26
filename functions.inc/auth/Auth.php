@@ -425,7 +425,7 @@ abstract class Auth {
 			$sth->execute([':aid' => $aid]);
 		}
 		$group = $sth->fetch(PDO::FETCH_ASSOC);
-		if(!empty($group)) {
+		if(!empty($group) && !empty($group['users'])) {
 			$group['users'] = json_decode((string) $group['users'],true, 512, JSON_THROW_ON_ERROR);
 			$group['users'] = is_array($group['users']) ? $group['users'] : [];
 		}
