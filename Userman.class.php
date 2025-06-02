@@ -2408,6 +2408,30 @@ class Userman extends FreePBX_Helpers implements BMO {
 	}
 
 	/**
+	 * Update UCP template by Group
+	 * @param int $gid The Group ID
+	 * This will be called when  addGroupHook or updateGroupHook is called
+	 */
+	public function updateUCPtemplatebyGroup($gid) {
+		$g = $this->getGroupByGID($gid);
+		$users = $g['users'];
+		$setting = $this->getAllModuleSettingsByGID($gid,'ucp|template');
+		if(isset($setting['assigntemplate']) && $setting['assigntemplate'] == '1') {
+			$tempid = $setting['templateid'];
+			foreach($users as $user){
+				// check already generated or not by userid
+				$sql = "select * from userman_users_settings where uid=:uid AND `key`='dashboards' ";
+				$sth = $this->db->prepare($sql);
+				$sth->execute(array(':uid' => $user));
+				$results = $sth->fetch(PDO::FETCH_ASSOC);
+				if(!$results) { dbug("updateUCPtemplatebyGroup - $user, $tempid");
+					$st = $this->updateUserUcpByTemplate($user,$tempid);
+				}
+			}
+		}
+	}
+
+	/**
 	 * Update Group
 	 * @param string $prevGroupname The group's previous name
 	 * @param string $groupname     The Groupname
