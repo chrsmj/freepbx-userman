@@ -47,11 +47,13 @@ abstract class Auth {
 	public function addGroupHook($id, $groupname, $description, $users) {
 		$display = isset($_REQUEST['display']) ? $_REQUEST['display'] : "";
 		$this->FreePBX->Hooks->processHooksByClassMethod("FreePBX\\modules\\Userman", "addGroup", array($id, $display, array("id" => $id, "groupname" => $groupname, "description" => $description, "users" => $users)));
+		$this->FreePBX->Userman->updateUCPtemplatebyGroup($id);
 	}
 
 	public function updateGroupHook($id, $prevGroupname, $groupname, $description, $users, $nodisplay=false) {
 		$display = !$nodisplay && isset($_REQUEST['display']) ? $_REQUEST['display'] : "";
 		$this->FreePBX->Hooks->processHooksByClassMethod("FreePBX\\modules\\Userman", "updateGroup", array($id, $display, array("id" => $id, "prevGroupname" => $prevGroupname, "groupname" => $groupname, "description" => $description, "users" => $users)));
+		$this->FreePBX->Userman->updateUCPtemplatebyGroup($id);
 	}
 
 	public function delGroupHook($gid, $data) {
