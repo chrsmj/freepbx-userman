@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-02 07:14-0400\n"
-"PO-Revision-Date: 2025-06-12 22:53+0000\n"
+"PO-Revision-Date: 2025-06-13 03:13+0000\n"
 "Last-Translator: \"C. Maj\" <chrsmj@users.noreply.weblate-"
 "staging.freepbx.org>\n"
 "Language-Team: Spanish <https://weblate-staging.freepbx.org/projects/freepbx/"
@@ -103,7 +103,7 @@ msgstr "Agregar"
 
 #: install.php:53
 msgid "Add Account Code"
-msgstr ""
+msgstr "Agregar código de cuenta"
 
 #: views/call_activity_group.php:6 views/rnav.php:59
 msgid "Add Call Activity Group"
