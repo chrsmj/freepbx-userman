@@ -10,28 +10,31 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-02 07:14-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: te\n"
+"PO-Revision-Date: 2025-06-13 05:47+0000\n"
+"Last-Translator: PURNAMALLAVOLU <purna280596@gmail.com>\n"
+"Language-Team: Telugu <https://weblate-staging.freepbx.org/projects/freepbx/"
+"test-userman/te/>\n"
+"Language: te_IN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.1\n"
 
 #: assets/js/userman.js:5
 msgid " users."
-msgstr ""
+msgstr " వినియోగదారు"
 
 #: views/groups.php:36
 #: views/users.php:33
 #, php-format
 msgid "%s Administration GUI"
-msgstr ""
+msgstr "%s అడ్మినిస్ట్రేషన్ GUI"
 
 #: functions.inc/auth/modules/Freepbx.php:25
 #, php-format
 msgid "%s Internal Directory"
-msgstr ""
+msgstr "%s అంతర్గత డైరెక్టరీ"
 
 #: views/welcome.php:9
 #, php-format
@@ -41,6 +44,9 @@ msgid ""
 "iSymphony and RestAPI are examples of these type of modules. For %s systems, "
 "the new User Control Panel also uses User Manager."
 msgstr ""
+"%s యూజర్ మేనేజర్, ఎక్స్‌టెన్షన్‌ల నుండి విడిగా యూజర్‌లను సృష్టించడానికి మరియు నిర్వహించడానికి ప్రయత్నించిన అనే"
+"క మాడ్యూళ్ల స్థానాన్ని ఆక్రమిస్తోంది. iSymphony మరియు RestAPI వంటి మాడ్యూళ్లు ఈ రకమైన మాడ్యూళ్లకు "
+"ఉదాహరణలు. %s సిస్టమ్‌ల కోసం, కొత్త యూజర్ కంట్రోల్ ప్యానెల్ కూడా యూజర్ మేనేజర్‌ను ఉపయోగిస్తుంది."
 
 #: Userman.class.php:4154
 #, php-format
